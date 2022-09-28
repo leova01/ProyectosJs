@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+*{
+   
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+.navbar{
+
+    background-color:rgb(224, 223, 223);
+    font-size: larger;
+    font-family: 'Oswald', sans-serif;
+    box-shadow: 2px 2px 4px black;
+    text-align: left;
+}
+
+.menu{
+
+    position:fixed;
+	z-index:1000;
+	top:0;
+	max-width:100%;
+    width:100%;
+	box-shadow:0px 4px 3px rgba(0,0,0,.5);
+
+}
+
+
+.logo{
+
+    padding: 0;
+    margin: 0;
+    width: 100px;
+    
+    
+}
+
+.hero{
+
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../img/banner_tech.jpg');
+    background-image: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 60px;
+}
+
+.titulos{
+
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 60px;
+    padding: 180px;
+}
+
+#titulo{
+
+    padding: 60px;
+    border: auto;
+
+}
+
+#perfil{
+
+    text-align: center;
+    padding: 0;
+
+}
+
+#perfil p{
+
+    text-align: center;
+    font-size: 100px;
+    
+}
+
+#aboutme img {
+
+    max-width: 360px;
+    height: 400px;
+    border-radius: 10px;
+    border: 10px;
+    float: left;
+    
+    
+}
+
+.card-Aboutme{
+
+    text-align: center;
+    padding: 5px;
+    width: 100%;
+    min-width: 220px;
+    height: 500px;
+    background-color:rgba(247, 247, 207, 0.705);
+    box-shadow: 4px 4px 6px black;
+    border-radius: 5px;
+    font-family: 'Oswald', sans-serif
+    
+}
+
+#aboutme p{
+
+    background-size: cover;
+    text-align: center;
+
+}
+
+p{
+
+    font-family: 'Oswald', sans-serif;
+    font-size: x-large;
+}
+
+
+#aptitudes{
+
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.card{
+  
+    padding: 20px 10px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 4px lightgray;
+ 
+}
+
+.card:hover{
+
+    box-shadow: 4px 4px 6px lightgray;
+
+}
+
+.card p{
+
+    padding: 20px;
+    text-align: center;
+
+}
+
+.card img{
+
+    margin: 0%;
+    width: 320px;
+    text-align: center ;
+
+}
+
+.card span{
+
+    display: flex;
+    padding: 5px;
+    max-width: 300px;
+
+}
+
+#aptitudes .card{
+
+    max-width: 50%;
+    display:table-cell;
+
+}
+
+h1{
+
+    
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    
+}
+
+span{
+
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: medium;
+    
+}
+
+footer{
+
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+ul{
+
+    text-align: center;
+    list-style: none;
+    list-style-position: inside;
+
+}
+
+
+#redes img{
+
+    max-width: 40px;
+    display:table-cell;
+    justify-content: space-around;
+    text-align: center;
+
+}
+
+a{
+
+    text-align: center;
+    justify-content: space-around;
+    display:table-cell;
+
+}
+
+.copy{
+
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+
+}
+
+li{
+
+    text-align: center;
+    display: table-cell;
+    justify-content: space-around;
+    padding: 20px;
+    
+    
+}
