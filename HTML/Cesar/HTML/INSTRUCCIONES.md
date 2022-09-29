@@ -1,1 +1,0 @@
-dentro de esta carpeta cada uno basicamente va a poner 1 sus portafolios individuales y los iran conectando con sus dependencias en orden cada cosa en su respectiva carpeta
