@@ -200,7 +200,11 @@ p {
 
 /* Hero Section */
 #hero {
+
 	background-image: url(/ProyectosProfesorJs/assets/img_marvin/spiderman\ fondo.jpg);
+
+	background-image: url("../../assets/img_marvin/spiderman\ fondo.jpg");
+
 	background-size: cover;
 	background-position: top center;
 	position: relative;
@@ -291,7 +295,11 @@ p {
 	flex-direction: column;
 	padding: 30px;
 	border-radius: 10px;
+
 	background-image: url(/ProyectosProfesorJs/assets/img_marvin/spiderman\ fondo\ 2.jpg);
+
+	background-image: url("../../assets/img_marvin/spiderman\ fondo\ 2.jpg");
+
 	background-size: cover;
 	margin: 10px 5%;
 	position: relative;
