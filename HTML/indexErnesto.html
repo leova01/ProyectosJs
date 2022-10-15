@@ -78,11 +78,54 @@
                 <a class="cta-btn cta-btn--hero" href="#about">Conóceme</a>
             </p>
         </section>
-        <a href="#about" class="scroll-down-link" aria-label="scroll-down">
-            <div class="scroll-down"></div>
-        </a>
+
     </div>
     <!-- /END Hero Section -->
+
+    <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
+    <script>
+        function showTime() {
+            var date = new Date();
+            var h = date.getHours(); // 0 - 23
+            var m = date.getMinutes(); // 0 - 59
+            var s = date.getSeconds(); // 0 - 59
+            var session = "AM";
+
+            if (h == 0) {
+                h = 12;
+            }
+
+            if (h > 12) {
+                h = h - 12;
+                session = "PM";
+            }
+
+            h = (h < 10) ? "0" + h : h;
+            m = (m < 10) ? "0" + m : m;
+            s = (s < 10) ? "0" + s : s;
+
+            var time = h + ":" + m + ":" + s + " " + session;
+            document.getElementById("MyClockDisplay").innerText = time;
+            document.getElementById("MyClockDisplay").textContent = time;
+
+            setTimeout(showTime, 1000);
+
+        }
+
+        showTime();
+    </script>
+    <style>
+        .clock {
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            font-size: 3rem;
+            font-size: 60px;
+            font-family: Orbitron;
+            letter-spacing: 7px;
+        }
+    </style>
 
     <!-- About Section -->
     <section id="about">
@@ -108,6 +151,8 @@
         </div>
     </section>
     <!-- /END About Section -->
+
+    <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
 
     <!--Projects Section-->
     <section id="projects">
@@ -200,7 +245,40 @@
                 <a href="#" class="cta-btn cta-btn--resume">Escríbeme un mensaje</a>
             </div>
         </div>
+        <div class="container">
+            <br>
+            <br>
+            <form>
+                <textarea name="tweet" id="textbox" class="form-control" rows="10" cols="60"></textarea>
+                <span id="char_count">100/100</span>
+            </form>
+        </div>
     </section>
+    <script>
+        let textArea = document.getElementById("textbox");
+        let characterCounter = document.getElementById("char_count");
+        const maxNumOfChars = 100;
+
+        const countCharacters = () => {
+            let numOfEnteredChars = textArea.value.length;
+            let counter = maxNumOfChars - numOfEnteredChars;
+            if (counter < 0) {
+                textArea.value = textArea.value.substring(0, maxNumOfChars);
+                characterCounter.innerHTML = "0/100";
+            } else {
+                characterCounter.innerHTML = counter + "/100";
+            }
+        };
+
+        textArea.addEventListener("input", countCharacters);
+        if (counter < 0) {
+            characterCounter.style.color = "red";
+        } else if (counter < 20) {
+            characterCounter.style.color = "orange";
+        } else {
+            characterCounter.style.color = "black";
+        }
+    </script>
     <!-- END Contact Section -->
 
     <!-- Footer Section -->
