@@ -1,0 +1,26 @@
+
+  
+  
+  #reloj {
+    font-family: montserrat;
+    font-size: 60px;
+    text-shadow: 0px 0px 5px #333;
+    color: #fff;
+  }
+  
+  /*.estiloDeClase*/
+  .reloj-contenedor {
+    background-color: #222222;
+    padding: 25px; /*Espacio de la fuente con la caja*/
+    max-width: 500px; /*Espacio que ocupa la caja contenedora*/
+    text-align: center;
+    border-radius: 5px; /*Redondeo de bordes*/
+    margin: 0 auto; /*Centrado respecto a #reloj*/
+    margin-top: 10%; /*Espacio que ocupa respecto al elemento que lo rodea*/
+  }
+  
+  #fecha {
+    letter-spacing: 5px;
+    font-size: 15px;
+  }
+  
