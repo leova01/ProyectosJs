@@ -17,6 +17,8 @@
         <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+
+        
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -42,6 +44,12 @@
                         <h1 class="text-white font-weight-bold">Bienvenido a nuestra pagina web y a nuestro portafolio</h1>
                         <hr class="divider" />
                     </div>
+
+                    <div class="container-clock">
+                        <h1 id="time">00:00:00</h1>
+                        <p id="date">date</p>
+                    </div>
+
                     <div class="col-lg-8 align-self-baseline">
                         <p class="text-white-75 mb-5"></p>
                         <a class="btn btn-primary btn-xl" href="#about">Ver más</a>
@@ -171,12 +179,15 @@
                                 <div class="invalid-feedback" data-sb-feedback="phone:required">El numero de teléfono es requerido.</div>
                             </div>
                             <!-- Message input-->
+
+                            
                             <div class="form-floating mb-3">
                                 <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
                                 <label for="message">Mensaje</label>
                                 <div class="invalid-feedback" data-sb-feedback="message:required">El mensaje es requerido.</div>
+                                
                             </div>
-                            
+
                             <div class="d-none" id="submitSuccessMessage">
                                 <div class="text-center mb-3">
                                     <div class="fw-bolder">El formulario se a enviado exitosamente!</div>
@@ -184,11 +195,21 @@
                                     <br />
                                     
                                 </div>
+
                             </div>
+
+                            <div class="status-ex">
+                                <span id="char"></span>
+                                <span id="words"></span>
+                                <span id="lines"></span>
+                                <span id="symbols"></span>
+                            </div>
+
+                            <script src="js/counter.js"></script>
                             
-                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error al enviar el mensaje!</div></div>
+                            <div class="d-none" id="submitErrorMessage "><div class="text-center text-danger mb-3">Error al enviar el mensaje!</div></div>
                             <!-- Submit Button-->
-                            <div class="d-grid"><button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Enviar</button></div>
+                            <div class="d-grid"><button class="btn btn-primary btn-xl" id="submitButton" type="submit">Enviar</button></div>
                         </form>
                     </div>
                 </div>
@@ -209,8 +230,13 @@
         <!-- SimpleLightbox plugin JS-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
         <!-- Core theme JS-->
+
+        <script src="js/Script_reloj.js"></script>
+
         <script src="js/scripts.js"></script>
-        
+
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+
+        
     </body>
 </html>
