@@ -13,13 +13,15 @@
 
 
         <link rel="stylesheet" href="../css/Cesar/bootstrap.css">
-        <link rel="stylesheet" href="../css/Cesar/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="../css/Cesar/font-awesome.min.css">
         <link rel="stylesheet" href="../css/Cesar/style.css">
         <link rel="stylesheet" type="text/css" href="../css/Cesar/fonts.css">
 		<link rel="stylesheet" href="../css/Cesar/responsive.css">
+		<link rel="stylesheet" href="../css/Cesar/counter.css">
+		<link rel="stylesheet" href="../css/Cesar/reloj.css">
 		
     </head>
-    <body>
+    <body onload='mostrarReloj()'>
        
         <header class="header_area">
             <div class="main_menu">
@@ -59,8 +61,9 @@
 					<div class="banner_content">
 						<div class="media">
 							<div class="d-flex">
-								<img src="../assets/Cesar/img/Foto.jpg" alt="..." loading="lazy" alt="main_image">
+								<img src="../assets/Cesar/img/Logo.png" alt="..." loading="lazy" alt="main_image">
 							</div>
+							
 							<div class="media-body">
 								<div class="personal_text">
 									<h5>Hola a todos</h5>
@@ -315,6 +318,27 @@
 						</div>
 					</div>
         		</div> 
+				<!--COMIENZA CONTADOR DE PALABRAS-->
+				<div class="cuerpo">
+					<div class="contenedor">
+						<div class="titulo">Contador de palabras</div>
+						<textarea id="text" placeholder="Escribe tu texto"></textarea>
+						<div class="status-ex">
+							<span id="char"></span>
+							<span id="words"></span>
+							<span id="lines"></span>
+							<span id="symbols"></span>
+						</div>
+					</div>
+				</div>
+				<!--TERMINA CONTADOR DE PALABRAS-->
+				
+				<div id="reloj">
+					<div class="reloj-contenedor" id="contenedor">
+					  <div id="hora">Reloj digital</div>
+					  <div id="fecha">Hora actual</div>
+					</div>
+				  </div>
         	</div>
         </section>  
        
@@ -367,5 +391,7 @@
         <script src="../js/Cesar/bootstrap.min.js"></script>
         <script src="../js/Cesar/stellar.js"></script>
         <script src="../js/Cesar/theme.js"></script>
+		<script src="../js/Cesar/counter.js"></script>
+		<script src="../js/Cesar/reloj.js"></script>
     </body>
 </html>
